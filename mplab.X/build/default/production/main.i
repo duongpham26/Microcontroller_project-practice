@@ -1882,8 +1882,9 @@ void main(void) {
 
     InitLCD();
 
-
-    GotoxyLCD(10,1);
+    WriteStringToLCD("An dep trai");
+    GotoxyLCD(12,1);
+    WriteStringToLCD("lam");
     while(1)
     {}
 

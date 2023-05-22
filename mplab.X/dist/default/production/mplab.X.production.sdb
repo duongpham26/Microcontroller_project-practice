@@ -19,6 +19,8 @@
 [v _WriteCommandToLCD WriteCommandToLCD `(v  1 e 1 0 ]
 "65
 [v _WriteDataToLCD WriteDataToLCD `(v  1 e 1 0 ]
+"76
+[v _WriteStringToLCD WriteStringToLCD `(v  1 e 1 0 ]
 "90
 [v _GotoxyLCD GotoxyLCD `(v  1 e 1 0 ]
 "24 E:\OneDrive - VNU-HCMUS\Ngành DTVT KHTN\HK4\TH VI DIEU KHIEN\project\mplab.X\main.c
@@ -52,9 +54,26 @@
 "24 E:\OneDrive - VNU-HCMUS\Ngành DTVT KHTN\HK4\TH VI DIEU KHIEN\project\mplab.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"33
+"34
 } 0
-"4 E:\OneDrive - VNU-HCMUS\Ngành DTVT KHTN\HK4\TH VI DIEU KHIEN\project\mplab.X\LCD.c
+"76 E:\OneDrive - VNU-HCMUS\Ngành DTVT KHTN\HK4\TH VI DIEU KHIEN\project\mplab.X\LCD.c
+[v _WriteStringToLCD WriteStringToLCD `(v  1 e 1 0 ]
+{
+[v WriteStringToLCD@s s `*.24DCuc  1 a 1 wreg ]
+[v WriteStringToLCD@s s `*.24DCuc  1 a 1 wreg ]
+[v WriteStringToLCD@s s `*.24DCuc  1 a 1 3 ]
+"80
+} 0
+"65
+[v _WriteDataToLCD WriteDataToLCD `(v  1 e 1 0 ]
+{
+[v WriteDataToLCD@LCDChar LCDChar `uc  1 a 1 wreg ]
+[v WriteDataToLCD@LCDChar LCDChar `uc  1 a 1 wreg ]
+"67
+[v WriteDataToLCD@LCDChar LCDChar `uc  1 a 1 2 ]
+"74
+} 0
+"4
 [v _InitLCD InitLCD `(v  1 e 1 0 ]
 {
 "44
